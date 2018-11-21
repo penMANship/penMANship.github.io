@@ -1,0 +1,23 @@
+It’s important to keep in mind that cloning https://github.com/kurple/le_js_full.git into kurple.github.io not only
+copies the repository into a new local directory, but also keeps the original git origin.
+
+[kurple.github.io (master)]$ git remote -v
+origin	https://github.com/kurple/le_js_full.git (fetch)
+origin	https://github.com/kurple/le_js_full.git (push)
+Before deploying to kurple.github.io, I need to change the git origin. I learned how to do this from an official GitHub
+help page and a Stack Overflow page.
+
+[kurple.github.io (master)]$ git remote set-url origin https://github.com/kurple/kurple.github.io.git
+[kurple.github.io (master)]$ git remote -v
+origin	https://github.com/kurple/kurple.github.io.git (fetch)
+origin	https://github.com/kurple/kurple.github.io.git (push)
+Now that git is reconfigured, I can push to my kurple.github.io repository.
+
+[kurple.github.io (master)]$ git add -A
+[kurple.github.io (master)]$ git commit -m "Initialize stub gallery"
+[kurple.github.io (master)]$ git push -u origin master
+Confirmed. It works in production. https://kurple.github.io/
+
+
+
+git remote set-url origin https://github.com/penMANship/penMANship.github.io.git
