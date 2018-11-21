@@ -96,7 +96,7 @@ h2 ~ p {
 
 /* HEADER STYLES */
 .header {
-  background-color: yellow; // #000;
+  background-color: #000;
   color: #fff;
   position: fixed;
   width: 100%;
