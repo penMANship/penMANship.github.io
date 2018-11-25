@@ -12,10 +12,9 @@ function activateGallery() {
         thumbnail.addEventListener("click", function () {
             let newImgSrc = thumbnail.dataset.largeVersion;
             mainImage.setAttribute("src", newImgSrc);
-            // mainImage.setAttribute("alt", (thumbnail.dataset.desciption).toString());
-            // console.log((thumbnail.dataset.desciption).toString());
+
             let newImgAlt = thumbnail.dataset.title;
-            console.log(newImgAlt);
+
             mainImage.setAttribute("alt", newImgAlt);
             infoTitle.innerHTML = thumbnail.dataset.title;
             infoDesc.innerHTML = thumbnail.dataset.description;

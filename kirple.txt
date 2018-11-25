@@ -21,3 +21,5 @@ Confirmed. It works in production. https://kurple.github.io/
 
 
 git remote set-url origin https://github.com/penMANship/penMANship.github.io.git
+
+This is the key step for publishing on Github-Pages
